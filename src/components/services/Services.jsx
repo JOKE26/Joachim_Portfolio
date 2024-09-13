@@ -35,7 +35,6 @@ const Services = () => {
         </article>
 
 
-
         <article className='service'>
           <div className="service_head">
             <h3>UI/UX Design</h3>

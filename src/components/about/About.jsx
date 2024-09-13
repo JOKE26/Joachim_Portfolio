@@ -11,13 +11,13 @@ import {BsEmojiSmileUpsideDown} from 'react-icons/bs'
 const About = () => {
   return (
     <section id='about'>
-      <h5>Faisons Connaisance</h5>
-      <h2>A propos de moi</h2>
+      <h5>Faisons Connaissance</h5>
+      <h2>À propos de moi</h2>
 
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="Mon côté bosseur" />
+            <img src={ME} alt="Moi en action" />
           </div>
         </div>
 
@@ -26,23 +26,22 @@ const About = () => {
             <article className='about__card'> 
               <FaAward className='about__icon' />
               <h5>Expérience</h5>
-              <small>Pas beaucoup, mais assez motivé pour en gagner <BsEmojiSmileUpsideDown /></small>
+              <small><b>3 ans</b> d'expérience, dont <b>2</b> en Alternance et <b>1</b> en Stage</small>
             </article>
             <article className='about__card'> 
               <FiUsers className='about__icon' />
-              <h5>Clients</h5>
-              <small>Vous êtes mon futur client!!</small>
+              <h5>Entreprises</h5>
+              <small><b>VML</b><br /><b>ALECOL</b><br /><b>SKYRAN-GROUP</b></small>
             </article>
             <article className='about__card'> 
               <VscFolderOpened className='about__icon' />
               <h5>Projets</h5>
-              <small>Je suis avide de nouveaux projets</small>
+              <small>J'ai déjà travaillé sur de nombreux projets qu'ils soient académiques ou professionnels</small>
             </article>
           </div>
 
           <p>
-          Autonome, rigoureux. Je suis passionné par le développement web et mobile. 
-          Actuellement je suis en Bac+4 Architect Digital/Web à l'Institut F2i de Vincennes.  
+          En tant que Développeur Web, je maîtrise plusieurs langages clés, notamment HTML, CSS, JavaScript, ainsi que des frameworks comme React.js ou Next.js. Toujours en quête d'innovation, j'aime travailler sur des projets passionnants et ambitieux. 💻  
           </p>
 
           <a href="#contact" className='btn btn-primary'>Alors, on discute!</a>

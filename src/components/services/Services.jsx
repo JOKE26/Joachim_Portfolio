@@ -21,15 +21,15 @@ const Services = () => {
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Développement front-end en utilisant des technologies telles que React.js</p>
+              <p>Développement front-end en utilisant des technologies telles que React.js ou Next.js</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Développement d'applications web personnalisées</p>
+              <p>Développement back-end sécurisé et performant</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Développement back-end</p>
+              <p>Développement d'applications web personnalisées adaptées aux besoins des clients</p>
             </li>
           </ul>
         </article>
@@ -48,11 +48,11 @@ const Services = () => {
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Création d'affiche avec Canva</p>
+              <p>Conception d'affiches et de supports graphiques avec Canva</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p>Création d'affiche, ou de maquette avec PhotoShop</p>
+              <p>Conception graphique avancée avec Photoshop</p>
             </li>
           </ul>
         </article>

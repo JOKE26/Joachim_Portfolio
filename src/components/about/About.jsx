@@ -54,7 +54,7 @@ const About = () => {
           <p>
             Réactif, autonome et orienté résultats, je m'investis pleinement
             dans chaque projet pour livrer des expériences à la hauteur des
-            attentes. Mon approche allie <strong>expertise technique</strong>
+            attentes. Mon approche allie <strong>expertise technique </strong>
             et <strong>créativité</strong>, avec un souci constant du détail et
             de l'expérience utilisateur.
           </p>

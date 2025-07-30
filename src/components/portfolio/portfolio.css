@@ -3,37 +3,76 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
 }
+
 .portfolio__item {
   background: var(--color-bg-variant);
-  padding: 1.2rem;
-  border-radius: 2rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
   border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transition: var(--transition);
 }
+
 .portfolio__item:hover {
+  border-color: var(--color-primary);
   background-color: var(--color-primary-variant);
-  background: transparent;
 }
+
 .portfolio__item-image {
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   overflow: hidden;
+  margin-bottom: 1.5rem;
 }
+
+.portfolio__item-text {
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
 .portfolio__item h3 {
-  margin: 1.2rem 0.2rem;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: var(--color-white);
 }
-.portfolio__item h4 {
-  margin: 1.2rem 0.2rem;
+
+.portfolio__description {
+  margin: 0 0 0.4rem 0;
+  font-size: 0.9rem;
+  color: var(--color-light);
 }
+
+.portfolio__role {
+  font-size: 0.85rem;
+  color: var(--color-light);
+  margin-top: 0.2rem;
+}
+
 .portfolio__item-cta {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.portfolio__tag {
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  background-color: rgba(77, 181, 255, 0.1);
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-weight: 500;
 }
 
 /* =================== MEDIA QUERIES (MEDIUM DEVICES) =================== */
 @media screen and (max-width: 1024px) {
   .portfolio__container {
     grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
+    gap: 2rem;
+  }
+
+  .portfolio__item {
+    padding: 1.5rem;
   }
 }
 
@@ -41,6 +80,10 @@
 @media screen and (max-width: 600px) {
   .portfolio__container {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.2rem;
+  }
+
+  .portfolio__item {
+    padding: 1.2rem;
   }
 }

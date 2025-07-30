@@ -1,16 +1,16 @@
-import React from 'react'
-import CTA from './CTA'
-import './header.css'
-import ME from '../../assets/Profil2.svg'
-import HeaderSocials from './HeaderSocials'
+import React from "react";
+import CTA from "./CTA";
+import "./header.css";
+import ME from "../../assets/Profil2.svg";
+import HeaderSocials from "./HeaderSocials";
 
 const Header = () => {
   return (
     <header>
       <div className="container header__container">
         <h5>Salut je suis</h5>
-        <h1>Joachim-Willy DEGBOE</h1>
-        <h5 className='text-light'>Developpeur Web</h5>
+        <h1>Joachim DEGBOE</h1>
+        <h5 className="text-light">Developpeur Web Freelance</h5>
         <CTA />
         <HeaderSocials />
 
@@ -18,10 +18,12 @@ const Header = () => {
           <img src={ME} alt="L'aventurier en moi" />
         </div>
 
-        <a href="#contact" className='scroll__down'>Défiler en bas</a>
+        <a href="#contact" className="scroll__down">
+          Défiler en bas
+        </a>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

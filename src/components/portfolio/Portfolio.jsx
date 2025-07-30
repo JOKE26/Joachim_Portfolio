@@ -1,86 +1,98 @@
 import React from "react";
 import "./portfolio.css";
-import IMG from "../../assets/header-img.svg";
+import sambo from "../../assets/sambo.png";
+import pharma from "../../assets/pharma-pantin.png";
+import plume from "../../assets/plume.png";
+import otodec from "../../assets/otodec.png"; // 🔧 À ajouter dans tes assets
 
 const data = [
   {
     id: 1,
-    image: IMG,
-    title: "SAMBO NETWORK",
-    description: "Site web réalisé avec Elementor sur WordPress",
+    image: sambo,
+    title: "Sambo Network",
+    description: "Site vitrine réalisé avec Elementor (WordPress)",
+    role: "Intégration complète et mise en ligne",
     demo: "https://sambonetwork.fr/",
   },
   {
     id: 2,
-    image: IMG,
+    image: pharma,
     title: "Pharmacie du Port de Pantin",
-    description: "Site Web réalisé avec Elementor sur WordPress",
+    description: "Site vitrine responsive via WordPress",
+    role: "Refonte et optimisation SEO locale",
     demo: "https://pharmacieduportdepantin.com/",
   },
   {
     id: 3,
-    image: IMG,
+    image: plume,
     title: "La Plume Industry",
-    description: "Site e-commerce réalisé grâce à Shopify",
+    description: "Boutique e-commerce développée avec Shopify",
+    role: "Paramétrage, design & publication",
     demo: "https://laplumeindustry.com/",
   },
   {
     id: 4,
-    image: IMG,
-    title: "Angular_pokemon",
-    description: "Projet réalisé avec Angular et présent sur mon Github",
-    github: "https://github.com/JOKE26/Angular_pokemon",
-  },
-  {
-    id: 5,
-    image: IMG,
-    title: "Flutter_dart-flutter",
-    description: "Projet réalisé avec Flutter et présent sur mon Github",
-    github: "https://github.com/JOKE26/Flutter_dart-flutter",
+    image: otodec,
+    title: "Otodec",
+    description:
+      "Site sur mesure en cours de développement (React/Nextjs + Node.js)",
+    role: "Développement complet – Front & Back",
+    demo: "", // Pas encore en ligne
   },
 ];
 
-const PortfolioItem = ({ id, image, title, github, description, demo }) => {
-  return (
-    <article key={id} className="portfolio__item">
-      <div className="portfolio__item-image">
-        <img src={image} alt={title} />
-      </div>
+const PortfolioItem = ({
+  id,
+  image,
+  title,
+  description,
+  role,
+  github,
+  demo,
+}) => (
+  <article key={id} className="portfolio__item">
+    <div className="portfolio__item-image">
+      <img src={image} alt={title} />
+    </div>
+    <div className="portfolio__item-text">
       <h3>{title}</h3>
-      <h4>{description}</h4>
-      <div className="portfolio__item-cta">
-        {github && (
-          <a
-            href={github}
-            className="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Voir le code source de ${title}`}
-          >
-            Voir le projet
-          </a>
-        )}
-        {demo && (
-          <a
-            href={demo}
-            className="btn"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Voir la démo de ${title}`}
-          >
-            Voir la démo
-          </a>
-        )}
-      </div>
-    </article>
-  );
-};
+      <p className="portfolio__description">{description}</p>
+      <p className="portfolio__role">
+        <strong>Mon rôle :</strong> {role}
+      </p>
+    </div>
+    <div className="portfolio__item-cta">
+      {github && (
+        <a
+          href={github}
+          className="btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Code source
+        </a>
+      )}
+      {demo ? (
+        <a
+          href={demo}
+          className="btn btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Voir le site
+        </a>
+      ) : (
+        <span className="portfolio__tag">En cours de développement</span>
+      )}
+    </div>
+  </article>
+);
 
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h5>Mes récents travaux</h5>
-      <h2>Portfolio</h2>
+      <h5>Quelques exemples de réalisations</h5>
+      <h2>Mon Portfolio</h2>
 
       <div className="container portfolio__container">
         {data.map((project) => (

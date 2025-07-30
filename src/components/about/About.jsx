@@ -4,18 +4,17 @@ import ME from "../../assets/contact-img.svg";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderOpened } from "react-icons/vsc";
-import { BsEmojiSmileUpsideDown } from "react-icons/bs";
 
 const About = () => {
   return (
     <section id="about">
-      <h5>Faisons Connaissance</h5>
-      <h2>À propos de moi</h2>
+      <h5>Présentation</h5>
+      <h2>Qui suis-je ?</h2>
 
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="Moi en action" />
+            <img src={ME} alt="Joachim Degboe - Développeur Web Freelance" />
           </div>
         </div>
 
@@ -23,41 +22,45 @@ const About = () => {
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />
-              <h5>Expérience</h5>
+              <h5>Expertise</h5>
               <small>
-                <b>Plus de 3 ans</b> d'expérience professionnelles
+                <strong>+3 ans</strong> d'expérience en Développement Web
               </small>
             </article>
+
             <article className="about__card">
               <FiUsers className="about__icon" />
-              <h5>Entreprises</h5>
-              <small>
-                <b>VML</b>
-                <br />
-                <b>ALECOL</b>
-                <br />
-                <b>SKYRAN-GROUP</b>
-              </small>
+              <h5>Clients & Missions</h5>
+              <small>Otodec, Total Énergie, Danone, ALECOL, SKYRAN-GROUP</small>
             </article>
+
             <article className="about__card">
               <VscFolderOpened className="about__icon" />
-              <h5>Projets</h5>
+              <h5>Projets réalisés</h5>
               <small>
-                J'ai déjà travaillé sur de nombreux projets qu'ils soient
-                personnels ou professionnels
+                Sites vitrines, e-commerce, apps web interactives & plus encore
               </small>
             </article>
           </div>
 
           <p>
-            En tant que Développeur Web, je maîtrise plusieurs langages clés,
-            notamment TypeScript, JavaScript, Python ainsi que des frameworks
-            comme React.js ou Next.js. Toujours en quête d'innovation, j'aime
-            travailler sur des projets passionnants et ambitieux. 💻
+            Je suis <strong>Joachim</strong>, Développeur Web Freelance basé à
+            Paris. J'accompagne entreprises, marques et entrepreneurs dans la
+            création de
+            <strong> solutions digitales sur mesure</strong> : Sites vitrines,
+            e-commerce, SEO-friendly, animations web, landing pages.
+          </p>
+
+          <p>
+            Réactif, autonome et orienté résultats, je m'investis pleinement
+            dans chaque projet pour livrer des expériences à la hauteur des
+            attentes. Mon approche allie <strong>expertise technique</strong>
+            et <strong>créativité</strong>, avec un souci constant du détail et
+            de l'expérience utilisateur.
           </p>
 
           <a href="#contact" className="btn btn-primary">
-            Alors, on discute!
+            Discutons de votre projet
           </a>
         </div>
       </div>
